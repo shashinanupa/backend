@@ -22,6 +22,12 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Description is required"],
       trim: true,
     },
+    // Aluthin ekathu karapu field eka
+    warrantyTerms: {
+      type: String,
+      required: [true, "Warranty terms are required"],
+      trim: true,
+    },
     imageUrl: {
       type: String,
       default: "",
